@@ -1,0 +1,175 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+body{
+	background: #0A0A0A;
+	color: #ededed;
+
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.logo {
+	font-size:25px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.navbar a {
+	font-size:18px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition:.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+	color: #00abf0;
+}
+
+.home {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+}
+.home-content {
+	max-width: 600px;
+}
+
+.home-content h1 {
+	font-size:56px;
+	font-weigt:700;
+	line-heigth: 1.2;
+}
+
+.home-content h3 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #0492c2;
+}
+
+.home-content .btn-box {
+	width: 345px;
+	height: 50px;
+	background: transparent;
+}
+
+.btn-box a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 100%;
+	background: #0492c2;
+	border: 2px solid #0492c2;
+	border-radius: 8px;
+	font-size: 19px;
+	color: #0A0A0A;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.btn-box a:hover{
+		color: white;
+}
+
+
+
+/* p */
+.home-content p{
+	font-size: 16px;
+	margin: 20px 0 40px;
+}
+
+/*#contact {*/
+
+/*	margin-top: 300px;*/
+/*  	text-align: center;*/
+
+
+/*}*/
+
+
+/* Apply basic styles to the form container */
+#contact {
+	margin-top: 300px;
+    max-width: 400px;
+	margin-left: 750px;
+    padding: 20px;
+    background-color: #1f2123;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the heading */
+#contact h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style labels for form fields */
+#contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style text inputs and textareas */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+#contact input[type="submit"] {
+	margin-left: 130px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+#contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style required fields (you can customize this further) */
+#contact input:required,
+#contact textarea:required {
+    border-color: #ff6347;
+}
+
