@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PORTFOLIO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> </a>
+        <ul>
+        <nav class="navbar">
+            <a href ="{% url 'home' %}">HOME</a>
+            <a href ="#about">ABOUT</a>
+            <a href ="#services">SERVICES</a>
+            <a href ="#portfolio">PORTFOLIO</a>
+            <a href ="contact.html">CONTACT & MESSAGE</a>
+        </ul>
+        </nav>
+    </header>
+
+{% block content %}
+   <link rel = "stylesheet" href = "{% static '/css/index.css' %}">
+    <section id="home"  class="home">
+        <div class="home-content">
+            <H1> Hi, I'm Nash Maglaqui</H1>
+            <h3>Aspiring Fullstack Developer</h3>
+            <p>I have a deep passion for discovery and learning, constantly seeking out new experiences and knowledge. Whether it's delving into a new subject, exploring uncharted territories, or embracing novel challenges, I thrive on the exhilarating journey of expanding my horizons.</p>
+            <div class="btn-box">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+     <section id="about"  class="home">
+        <div class="home-content">
+            <h1>About Me</h1>
+            <img src="{% static 'images/maglaqui-removebg-preview.png' %}" id="img">
+            <h3> I am a Computer Engineering Student!</h3>
+            <p>I am currently enrolled at Holy Angel University!</p>
+            </div>
+        </div>
+     </section>
+
+
+    <section id="services"  class="home">
+        <div class="home-content">
+            <h1>Services</h1>
+            <h3> I can help you with your WEBPAGE</h3>
+            <p>I can create, manage, and update your page!</p>
+            </div>
+        </div>
+     </section>
+
+    <section id="portfolio"  class="home">
+        <div class="home-content">
+            <h1>PORTFOLIO</h1>
+            <h3> CREATED AN PORTFOLIO</h3>
+            <p>I have also joined bootcamps to enhance my skills.</p>
+            </div>
+        </div>
+     </section>
+
+{% endblock content %}
+
+
+</body>
+</html>
